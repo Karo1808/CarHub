@@ -1,8 +1,6 @@
 import { Footer, Navbar } from "@/components";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { relative } from "path";
 
 export const metadata: Metadata = {
   title: "Car Hub",

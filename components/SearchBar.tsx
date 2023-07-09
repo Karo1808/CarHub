@@ -47,11 +47,13 @@ const SearchBar = () => {
       searchParams.delete("manufacturer");
     }
 
+    searchParams.set("limit", `${10}`);
+
     const newPathname = `${
       window.location.pathname
     }?${searchParams.toString()}`;
 
-    router.push(newPathname);
+    router.push(newPathname, { scroll: false });
   };
 
   return (

@@ -117,14 +117,14 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                         onClick={() => setIsOpen3(true)}
                       >
                         <Image
-                          src={generateCarImageUrl(car, "33")}
+                          src={generateCarImageUrl(car, "13")}
                           fill
                           alt="car model"
                           className="object-contain"
                         />
                       </div>
                       <CarImage
-                        src={generateCarImageUrl(car, "33")}
+                        src={generateCarImageUrl(car, "13")}
                         car={car}
                         isOpen={isOpen3}
                         closeModal={() => setIsOpen3(false)}

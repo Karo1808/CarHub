@@ -117,7 +117,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                         onClick={() => setIsOpen3(true)}
                       >
                         <Image
-                          src={generateCarImageUrl(car, "29")}
+                          src={generateCarImageUrl(car, "33")}
                           fill
                           alt="car model"
                           className="object-contain"

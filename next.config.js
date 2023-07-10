@@ -3,6 +3,9 @@ const nextConfig = {
   images: {
     domains: ["cdn.imagin.studio"],
   },
+  env: {
+    NEXT_PUBLIC_API_KEY: process.env.NEXT_PUBLIC_API_KEY,
+  },
 };
 
 module.exports = nextConfig;

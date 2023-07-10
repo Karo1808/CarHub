@@ -124,7 +124,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                         />
                       </div>
                       <CarImage
-                        src={generateCarImageUrl(car, "29")}
+                        src={generateCarImageUrl(car, "33")}
                         car={car}
                         isOpen={isOpen3}
                         closeModal={() => setIsOpen3(false)}

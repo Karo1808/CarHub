@@ -1,10 +1,12 @@
 "use client";
 
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { CarProps } from "@/types";
 import { Dialog, Transition } from "@headlessui/react";
 import Image from "next/image";
 import { generateCarImageUrl } from "@/utils";
+import CarImageMain from "./CarImageMain";
+import CarImage from "./CarImage";
 
 interface CarDetailsProps {
   isOpen: boolean;
@@ -13,6 +15,11 @@ interface CarDetailsProps {
 }
 
 const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
+  const [isOpenMain, setIsOpenMain] = useState(false);
+  const [isOpen1, setIsOpen1] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
+  const [isOpen3, setIsOpen3] = useState(false);
+
   return (
     <>
       <Transition appear show={isOpen} as={Fragment}>
@@ -54,7 +61,10 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                     />
                   </button>
                   <div className="flex-1 flex flex-col gap-3">
-                    <div className="relative w-full h-40 bg-pattern bg-cover bg-center rounded-lg">
+                    <div
+                      className="relative w-full h-40 bg-pattern bg-cover bg-center rounded-lg"
+                      onClick={() => setIsOpenMain(true)}
+                    >
                       <Image
                         src={generateCarImageUrl(car)}
                         fill
@@ -62,8 +72,17 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                         className="object-contain"
                       />
                     </div>
+                    <CarImage
+                      src={generateCarImageUrl(car)}
+                      car={car}
+                      isOpen={isOpenMain}
+                      closeModal={() => setIsOpenMain(false)}
+                    />
                     <div className="flex gap-3">
-                      <div className="flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg">
+                      <div
+                        className="flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg"
+                        onClick={() => setIsOpen1(true)}
+                      >
                         <Image
                           src={generateCarImageUrl(car, "29")}
                           fill
@@ -71,7 +90,16 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                           className="object-contain"
                         />
                       </div>
-                      <div className="flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg">
+                      <CarImage
+                        src={generateCarImageUrl(car, "29")}
+                        car={car}
+                        isOpen={isOpen1}
+                        closeModal={() => setIsOpen1(false)}
+                      />
+                      <div
+                        className="flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg"
+                        onClick={() => setIsOpen2(true)}
+                      >
                         <Image
                           src={generateCarImageUrl(car, "21")}
                           fill
@@ -79,14 +107,29 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                           className="object-contain"
                         />
                       </div>
-                      <div className="flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg">
+                      <CarImage
+                        src={generateCarImageUrl(car, "21")}
+                        car={car}
+                        isOpen={isOpen2}
+                        closeModal={() => setIsOpen2(false)}
+                      />
+                      <div
+                        className="flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg"
+                        onClick={() => setIsOpen3(true)}
+                      >
                         <Image
-                          src={generateCarImageUrl(car, "13")}
+                          src={generateCarImageUrl(car, "29")}
                           fill
                           alt="car model"
                           className="object-contain"
                         />
                       </div>
+                      <CarImage
+                        src={generateCarImageUrl(car, "29")}
+                        car={car}
+                        isOpen={isOpen3}
+                        closeModal={() => setIsOpen3(false)}
+                      />
                     </div>
                   </div>
 

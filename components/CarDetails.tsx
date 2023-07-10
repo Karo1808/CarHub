@@ -5,7 +5,6 @@ import { CarProps } from "@/types";
 import { Dialog, Transition } from "@headlessui/react";
 import Image from "next/image";
 import { generateCarImageUrl } from "@/utils";
-import CarImageMain from "./CarImageMain";
 import CarImage from "./CarImage";
 
 interface CarDetailsProps {

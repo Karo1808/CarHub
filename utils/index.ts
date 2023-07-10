@@ -2,7 +2,7 @@ import { CarProps, FilterProps } from "@/types";
 
 export const fetchCars = async (filters: FilterProps) => {
   const { manufacturer, model, year, fuel, limit } = filters;
-  const API_KEY = process.env.RAPID_API_KEY;
+  const API_KEY = process.env.NEXT_PUBLIC_RAPID_API_KEY;
 
   const headers = {
     "X-RapidAPI-Key": `${API_KEY}`,

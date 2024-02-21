@@ -64,7 +64,7 @@ https://car-hub-karo.vercel.app/
 
 ### Użyte technologie
 
-- **Next.js 13:** Framework React do budowania nowoczesnych aplikacji internetowych z renderowaniem po stronie serwera
+- **Next.js 13:** Framework React do budowania nowoczesnych aplikacji internetowych z SSR
 - **React:** Biblioteka JavaScript do budowania interfejsów użytkownika.
 - **Typescript:** Superset JavaScript dodający statyczne typowanie do języka.
 - **Tailwind CSS:** Framework CSS służący do szybkiego tworzenia spersonalizwanego wyglądu strony.

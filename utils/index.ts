@@ -3,6 +3,7 @@ import { CarProps, FilterProps } from "@/types";
 export const fetchCars = async (filters: FilterProps) => {
   const { manufacturer, model, year, fuel, limit } = filters;
   const API_KEY = process.env.RAPID_API_KEY;
+  console.log(API_KEY);
 
   const headers = {
     "X-RapidAPI-Key": `${API_KEY}`,
@@ -37,7 +38,7 @@ export const generateCarImageUrl = (car: CarProps, angle?: string) => {
   const url = new URL("https://cdn.imagin.studio/getimage");
   const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
   const { make, year, model } = car;
-  url.searchParams.append("customer", `${API_KEY}` ?? "");
+  url.searchParams.append("customer", `${API_KEY}`);
   url.searchParams.append("make", make);
   url.searchParams.append("modelFamily", model.split(" ")[0]);
   url.searchParams.append("zoomType", "fullscreen");

@@ -53,7 +53,7 @@ Create an .env.local file and add the following environment variables
 
 ```bash
 # Imagin API KEY
-API_KEY=
+NEXT_PUBLIC_API_KEY=
 # RAPID API KEY
 RAPID_API_KEY=
 ```

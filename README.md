@@ -8,12 +8,6 @@
 
 CarHub is a web application that allows the user to browse cars based on various criteria it also provides details about the selected vehicle and images captured from a variety of angles
 
-This web application was built following the [tutorial by JavaScriptMastery](https://www.youtube.com/watch?v=pUNSHPyVryU&pp=ygUZamF2YXNjcmlwdCBtYXN0ZXJ5IGNhcmh1Yg%3D%3D)
-
-### Demo
-
-[Website link](https://car-hub-karo.vercel.app/)
-
 ### Features
 
 - **Modern and User-Friendly Interface:** Experience a sleek and intuitive interface designed for effortless navigation and enhanced user engagement.

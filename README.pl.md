@@ -8,12 +8,6 @@
 
 CarHub to aplikacja internetowa, która umożliwia użytkownikowi przeglądanie samochodów na podstawie różnych kryteriów. Zapewnia również szczegółowe informacje o wybranym pojeździe oraz obrazy z różnych kątów.
 
-Aplikacja internetowa została zbudowana na podstawie [samouczka JavaScriptMastery](https://www.youtube.com/watch?v=pUNSHPyVryU&pp=ygUZamF2YXNjcmlwdCBtYXN0ZXJ5IGNhcmh1Yg%3D%3D)
-
-### Link do strony:
-
-[Strona internetowa](https://car-hub-karo.vercel.app/)
-
 ### Funkcje
 
 - **Nowoczesny i przyjazny dla użytkownika interfejs:** Doświadczaj eleganckiego i intuicyjnego interfejsu zaprojektowanego dla bezproblemowej nawigacji i zwiększonego zaangażowania użytkownika.
